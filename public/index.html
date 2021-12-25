@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./imgs/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -12,13 +13,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Bookmark | Made Easy</title>
   </head>
   <body class="overflow-x-hidden">
     <header>
       <nav class="container flex items-center mt-4 py-4 sm:mt-12 uppercase">
         <div class="py-1">
-          <img src="./imgs/logo-bookmark.svg" alt="logo" />
+          <img class="w-36" src="./imgs/logo-bookmark.svg" alt="logo" />
         </div>
         <ul
           class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue text-xs"
@@ -91,6 +92,7 @@
 
       <div
         class="
+          mix-blend-overlay
           hidden
           md:block
           bg-bookmark-purple
@@ -101,6 +103,7 @@
           top-32
           right-0
           lg:-bottom-28 lg:-right-36
+          drop-shadow-2xl
         "
       ></div>
     </section>
@@ -121,7 +124,7 @@
         <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
           <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
             <img
-              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full drop-shadow-2xl"
               src="./imgs/illustration-features-tab-1.png"
               alt="features 1"
             />
@@ -151,7 +154,6 @@
           "
         ></div>
       </div>
-
       <!-- Features #2 -->
       <div class="relative mt-20 lg:mt-52">
         <div
@@ -159,7 +161,7 @@
         >
           <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
             <img
-              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full drop-shadow-2xl"
               src="./imgs/illustration-features-tab-2.png"
               alt="features 1"
             />
@@ -195,7 +197,7 @@
         <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
           <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
             <img
-              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full drop-shadow-2xl"
               src="./imgs/illustration-features-tab-3.png"
               alt="features 1"
             />
@@ -235,6 +237,71 @@
           We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite
           you’d like us to prioritize.
         </p>
+      </div>
+
+      <!-- cards -->
+      <div
+        class="
+          container
+          max-w-screen-lg
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-3
+          gap-16
+          mt-16
+        "
+      >
+        <!-- Car0d 1 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+          <div class="p-6 flex flex-col items-center">
+            <img src="./imgs/logo-chrome.svg" alt="chrome" />
+            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+            <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
+          </div>
+          <hr class="border-b border-bookmark-white" />
+          <div class="flex p-6">
+            <button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex flex-col rounded-md shadow-md lg:my-8">
+          <div class="p-6 flex flex-col items-center">
+            <img src="./imgs/logo-firefox.svg" alt="Firefox" />
+            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Firefox</h3>
+            <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
+          </div>
+          <hr class="border-b border-bookmark-white" />
+          <div class="flex p-6">
+            <button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="
+            flex flex-col
+            rounded-md
+            shadow-md
+            lg:mt-16
+            md:col-span-2 md:w-1/2 md:justify-self-center
+            lg:col-span-1 lg:w-full
+          "
+        >
+          <div class="p-6 flex flex-col items-center">
+            <img src="./imgs/logo-opera.svg" alt="chrome" />
+            <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Opera</h3>
+            <p class="mb-2 text-bookmark-grey font-light">Minimum version 62</p>
+          </div>
+          <hr class="border-b border-bookmark-white" />
+          <div class="flex p-6">
+            <button class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   </body>
